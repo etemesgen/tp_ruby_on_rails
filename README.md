@@ -1,6 +1,6 @@
 # README
 
-TP Rendu Ruby on Rails Edomiyas TEMESGEN IDEV
+TP Rendu Ruby on Rails Edomiyas TEMESGEN IDEV2
 
 Voici le rendu de l'application en vidéo ci-dessous :
 

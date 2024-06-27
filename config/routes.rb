@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   get 'connexion', to: 'sessions#new'
   post 'connexion', to: 'sessions#create'
   delete 'deconnexion', to: 'sessions#destroy'
-  get 'apropos', to: 'pages#apropos'
+  get 'dashboard', to: 'pages#dashboard'
+  get 'faq', to: 'pages#faq'
   get 'contact', to: 'pages#contact'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

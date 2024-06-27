@@ -3,13 +3,12 @@ class SessionsController < ApplicationController
   end
 
   def create
-    Rails.logger.debug "Params received: #{params.inspect}"
     user = User.find_by(email: session_params[:email].downcase)
     if user && user.authenticate(session_params[:password])
       log_in user
-      redirect_to user_path(current_user)
+      redirect_to dashboard_path
     else
-      flash.now[:danger] = 'Invalid email/password combination'
+      flash.now[:danger] = 'Email ou mot de passe invalide.'
       render 'new'
     end
   end

@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  resources :users
+
+  get 'inscription', to: 'users#new'
+  get 'inscription', to: 'users#create'
+  get 'connexion', to: 'sessions#new'
+  post 'connexion', to: 'sessions#create'
+  delete 'deconnexion', to: 'sessions#destroy'
+  get 'apropos', to: 'pages#apropos'
+  get 'contact', to: 'pages#contact'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -6,5 +15,5 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  # root "posts#index"
+  root "pages#accueil"
 end

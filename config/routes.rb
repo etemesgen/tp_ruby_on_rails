@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :users
+  resources :tasks, only: [:new, :create, :edit, :update, :destroy]
 
   get 'inscription', to: 'users#new'
   get 'inscription', to: 'users#create'

@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+TP Rendu Ruby on Rails Edomiyas TEMESGEN IDEV2
 
-Things you may want to cover:
+Voici le rendu de l'application en vidéo ci-dessous :
 
-* Ruby version
+https://github.com/etemesgen/tp_ruby_on_rails/assets/44799499/4794a311-faac-4ae0-bc51-f3d2b94f818d
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
